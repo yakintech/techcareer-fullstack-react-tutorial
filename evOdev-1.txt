@@ -1,0 +1,2 @@
+1) Key hatası araştırma
+2) https://northwind.vercel.app/api/suppliers url den dataları al (kopyalama aynı products lduğu gibi) ve en az 4 kolon olacak şekilde bir table oluştur ve dataları göster
