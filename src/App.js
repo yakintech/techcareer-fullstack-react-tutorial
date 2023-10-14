@@ -1,10 +1,9 @@
-import JsxEventSample from "./jsxSample/JsxEventSample"
+import UserDetail from "./props/UserDetail"
 
-
-function App(){
+function App() {
 
   return <>
-    <JsxEventSample/>
+    <UserDetail name='Çağatay' surname='Yıldız' age={18} points={[3, 5, 8, 11]} />
   </>
 }
 
