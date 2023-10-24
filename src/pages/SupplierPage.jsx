@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function SupplierPage() {
 
@@ -52,7 +53,7 @@ function SupplierPage() {
                     {
                         suppliers && suppliers.map(item => {
                             return <tr>
-                                <td>{item.id}</td>
+                                <td><Link to={'/suppliers/' + item.id}>{item.id}</Link></td>
                                 <td>{item.companyName}</td>
                                 <td>{item.contactName}</td>
                                 <td>{item.contactTitle}</td>
