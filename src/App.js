@@ -5,6 +5,7 @@ import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
 import SupplierPage from './pages/SupplierPage'
 import SupplierDetail from './pages/SupplierDetail'
+import AddSupplier from './formSample/AddSupplier'
 
 function App() {
   return (<>
@@ -13,6 +14,8 @@ function App() {
       <li><Link to='/about'>About</Link></li>
       <li><Link to='/contact'>Contact</Link></li>
       <li><Link to='/suppliers'>Suppliers</Link></li>
+      <li><Link to='/addsupplier'>Add supplier</Link></li>
+
 
     </ul>
 
@@ -22,8 +25,7 @@ function App() {
         <Route path='/contact' element={<ContactPage/>} />
         <Route path='/suppliers' element={<SupplierPage/>} />
         <Route path='/suppliers/:id' element={<SupplierDetail/>} />
-
-
+        <Route path='/addsupplier' element={<AddSupplier/>} />
     </Routes>
 
 
