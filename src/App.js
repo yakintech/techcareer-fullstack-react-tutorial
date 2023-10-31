@@ -8,6 +8,8 @@ import SupplierDetail from './pages/SupplierDetail'
 import AddSupplier from './formSample/AddSupplier'
 import Intro from './muiSample/Intro'
 import GridSample from './muiSample/GridSample'
+import { DataGrid } from '@mui/x-data-grid'
+import DataGridSample from './muiSample/DataGridSample'
 
 function App() {
   return (<>
@@ -19,6 +21,8 @@ function App() {
       <li><Link to='/addsupplier'>Add supplier</Link></li>
       <li><Link to='/muisample'>MUI Sample</Link></li>
       <li><Link to='/grid'>MUI Grid </Link></li>
+      <li><Link to='/datagrid'>Data Grid </Link></li>
+
 
 
 
@@ -33,7 +37,7 @@ function App() {
         <Route path='/addsupplier' element={<AddSupplier/>} />
         <Route path='/muisample' element={<Intro/>} />
         <Route path='/grid' element={<GridSample/>} />
-        
+        <Route path='/datagrid' element={<DataGridSample/>} />
     </Routes>
 
 
