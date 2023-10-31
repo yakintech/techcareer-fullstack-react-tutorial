@@ -6,6 +6,8 @@ import ContactPage from './pages/ContactPage'
 import SupplierPage from './pages/SupplierPage'
 import SupplierDetail from './pages/SupplierDetail'
 import AddSupplier from './formSample/AddSupplier'
+import Intro from './muiSample/Intro'
+import GridSample from './muiSample/GridSample'
 
 function App() {
   return (<>
@@ -15,6 +17,9 @@ function App() {
       <li><Link to='/contact'>Contact</Link></li>
       <li><Link to='/suppliers'>Suppliers</Link></li>
       <li><Link to='/addsupplier'>Add supplier</Link></li>
+      <li><Link to='/muisample'>MUI Sample</Link></li>
+      <li><Link to='/grid'>MUI Grid </Link></li>
+
 
 
     </ul>
@@ -26,6 +31,9 @@ function App() {
         <Route path='/suppliers' element={<SupplierPage/>} />
         <Route path='/suppliers/:id' element={<SupplierDetail/>} />
         <Route path='/addsupplier' element={<AddSupplier/>} />
+        <Route path='/muisample' element={<Intro/>} />
+        <Route path='/grid' element={<GridSample/>} />
+        
     </Routes>
 
 
