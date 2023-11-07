@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { CounterContext } from '../context/CounterContext'
 
 function ContactPage() {
-  return (
-    <div>ContactPage</div>
+
+ const {counter, setcounter } =  useContext(CounterContext)
+
+  return (<>
+    <h1>{counter}</h1>
+    <button onClick={() => setcounter(0)}>Empty</button>
+  </>
   )
 }
 
